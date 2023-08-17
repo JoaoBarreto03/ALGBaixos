@@ -14,17 +14,17 @@
   <br><br>
         <div class="form" >
           <br><br><br> 
-          <form>
+          <form action="{% url 'login' %}" method="POST">
             <div class="form-group">
                   <label for="exampleInputEmail1">Endereço de email</label>
-                  <input type="email" class="form-control" placeholder="Seu email" name="email">
+                  <input type="email" class="form-control" placeholder="Seu email" name="emailLog">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" placeholder="Senha" name="senha">
+                  <input type="password" class="form-control" placeholder="Sua Senha" name="senhaLog">
                 </div>
 
-                <button class="send-button" type="submit" class="btn btn-primary">Enviar</button>
+                <button class="send-button" type="submit" class="btn btn-primary" onclick="login()">Enviar</button>
               </form>
         </div>  
         
